@@ -10,4 +10,10 @@ docker run (태그이름)
 
 # docker image를 실행한 이후 terminal 사용하기
 docker -it run (태그이름) sh
+
+# docker port 매핑
+docker run -p (호스트포트):(container포트)
+
+# docker volume 지정하기
+docker run -v "$(pwd):(WORKDIR)"
 ```
